@@ -6,4 +6,5 @@ My name is Kerem. I'm from Turkey and I'm a student. I like playing games in my 
 - Hisar School
 
 #### Projects
-You can find my projects in my account. (https://github.com/keremdiren1/keremdiren1.github.io)
+You can find my projects in my account.
+https://github.com/keremdiren1/keremdiren1.github.io
