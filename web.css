@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700,900);
+
+.centered {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.interweb {
+    margin: 7px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.25s;
+}
+
+.interweb:hover {
+    top: -5px;
+}
+
+.left {
+  position: relative;
+  width:100%;
+  max-width:320px;
+  height:auto;
+  float:left;
+}
+
+.right {
+  position: relative;
+  width:100%;
+  max-width:370px;
+  height:auto;
+  float:right;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.left:hover .image {
+  opacity: 0.3;
+}
+
+.left:hover .middle {
+  opacity: 1;
+}
+
+.right:hover .image {
+  opacity: 0.3;
+}
+
+.right:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: white;
+  font-family: Nunito, Helvetica;
+  font-size: 20px;
+  color: black;
+  padding: 16px 32px;
+}
+
+p {
+  font-size:16px;
+  font-family: Nunito, Helvetica;
+  line-height: 1.5;
+  color: #191919;
+  padding-bottom: 15px;
+}
+
+li {
+  font-size:16px;
+  font-family: Nunito, Helvetica;
+  line-height: 1.5;
+  color: #191919;
+}
+
+h1, h2 {
+  margin: 7px;
+  font-family: Nunito, Helvetica;
+  font-weight:700;
+}
+
+h3 {
+  font-family: Nunito, Helvetica;
+}
