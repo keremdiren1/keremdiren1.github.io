@@ -16,7 +16,74 @@
 		<h3 class="centered" style="color: #191919;font-size: 25px">AP CSA Topic 2</h3>
 		<div class="centered">
 			<p style="margin-top:5px"><i>Taken Notes:</a></i></p>
-			<p>TEXT</p>
+			<p>A class is like a blueprint that’s used to create objects with the same behaviors and attributes.</p>
+			<p></p>
+			<p>Objects are instances of classes.</p>
+			<p></p>
+			<p>Each object’s behaviors/methods and attributes are defined by the class it was made from.</p>
+			<p></p>
+			<p>More than 1 object can be created using a class.</p>
+			<p></p>
+			<p>Each object can be different from each other.</p>
+			<p></p>
+			<p>Constructors are used to initialize the attributes of an object.</p>
+			<p></p>
+			<p>Constructors must have the same name as the class.</p>
+			<p></p>
+			<p>A class also has methods. While attributes are things like “color,” these are actions like “running.”</p>
+			<p></p>
+			<p>Creating a constructor (example):</p>
+			<p>	private String color;</p>
+			<p>	private int number;</p>
+			<p>	public Something(String variable1, int variable2){</p>
+			<p>		color = variable1;</p>
+			<p>		number = variable2;</p>
+			<p>	}</p>
+			<p>}</p>
+			<p></p>
+			<p>Creating an object (example): ClassName name = new ClassName(variable1, variable2);</p>
+			<p></p>
+			<p>We can have more than one constructor for an object, which is called overloading the constructor.</p>
+			<p></p>
+			<p>While creating an object, if we don’t set any initial values for the constructors, the values will be set to null.</p>
+			<p></p>
+			<p>We don’t put anything like “int” or “void” in front of a constructor, unlike a method.</p>
+			<p></p>
+			<p>Something like this is possible with these:</p>
+			<p>public class Something{</p>
+			<p>	private String color;</p>
+			<p>	private int number;</p>
+			<p>	public Something(String variable1, int variable2){</p>
+			<p>		color = variable1;</p>
+			<p>		number = variable2;</p>
+			<p>	}</p>
+			<p>	public String Renk(){</p>
+			<p>		return color;</p>
+			<p>	}</p>
+			<p>	public int Sayı(){</p>
+			<p>		return number;</p>
+			<p>	}</p>
+			<p>	public void Attributes(int a){</p>
+			<p>		System.out.println(color + “ “ + number + “ “ + a);</p>
+			<p>	}</p>
+			<p>	public void Naber(){</p>
+			<p>		System.out.println(“Naber”);</p>
+			<p>	}</p>
+			<p>	public static void main(String[] args){</p>
+			<p>		Something bişey = new Something(“red”,12);</p>
+			<p>		System.out.println(bişey.Renk());</p>
+			<p>		bişey.Attributes(15);</p>
+			<p>		bişey.Naber();</p>
+			<p>	}</p>
+			<p>}</p>
+			<p></p>
+			<p>This will print out:</p>
+			<p>red</p>
+			<p>red 12 15</p>
+			<p>Naber</p>
+			<p></p>
+			<p></p>
+			<p>Putting “void” in front of the constructor name would make it so that it doesn’t return anything.</p>
 		<br>
 </body>
 </html>
