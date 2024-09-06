@@ -8,5 +8,5 @@ My name is Kerem. I'm from Turkey and I'm a student. I like playing games in my 
 #### Projects
 You can find my projects in this [link](https://keremdiren1.github.io/projects.html).
 
-#### AP CS A Stuff
-You can find my CS A stuff in my [account](https://github.com/keremdiren1/keremdiren1.github.io/tree/main/AP%20CS%20A%20topics).
+#### AP CS A Notes
+You can find my notes on AP CSA notes in this [link](https://keremdiren1.github.io/projects.html).
