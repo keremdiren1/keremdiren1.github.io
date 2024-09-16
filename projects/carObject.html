@@ -17,28 +17,50 @@
 		<div class="centered">
 			<p style="margin-top:5px"><i>Tools: CS Code and Java | Source Code: <a href="https://github.com/keremdiren1/keremdiren1.github.io/blob/main/CS%20projects/Araba.java">GitHub</a></i></p>
 			<p>This code is an example of a simple class and an object.</p>
-			<p>-public class Araba{   //This line creates the Araba class.</p>
-      			<p>- - - private String color;   //This line creates the String variable color.</p>
-      			<p>- - - private int speed;   //This line creates the int variable speed.</p>
-      			<p>- - - private String model;   //This line creates the String variable model.</p>
-      			<p>- - - public Araba(String a, int b, String c){</p>   //This line creates a constructor for this class.</p>
-      			<p>- - - - - - color = a;   //This line gives a value to the variable color.</p>
-      			<p>- - - - - - speed = b;   //This line gives a value to the variable speed.</p>
-      			<p>- - - - - - model = c;   //This line gives a value to the variable speed.</p>
-      			<p>- - - }</p>
-      			<p>- - - public void colorSpeedModel(){   //This line creates the colorSpeedModel method.</p>
-      			<p>- - - - - - System.out.println("Color: " + color + " | Speed: " + speed + " | Model: " + model);   //This line decides what happens when this method is used.</p>
-      			<p>- - - }</p>
-      			<p>- - - public static void main(String[] args){   //This line creates the main method.</p>
-      			<p>- - - - - - Araba car = new Araba("siyah",115,"Şahin");   //This line creates the car object.</p>
-      			<p>- - - - - - car.colorSpeedModel();   //In this line, car object uses the colorSpeedModel method.</p>
-      			<p>- - - - - - System.out.println("Color = " + car.color + " | Speed = " + car.speed + " | Model = " + car.model);   //This line prints out the variables of the Araba class using the car object.</p>
-      			<p>- - - }</p>
-      			<p>-}</p>
 		<br>
 </body>
 </html>
 			<br>
 		</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarDemo Java Code</title>
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+	<h1>Palindrama Code</h1>
+    <pre><code>
+public class Araba{   //This line creates the Araba class.
+	private String color;   //This line creates the String variable color.
+    	private int speed;   //This line creates the int variable speed.
+	private String model;   //This line creates the String variable model.
+	public Araba(String a, int b, String c){</p>   //This line creates a constructor for this class.
+		color = a;   //This line gives a value to the variable color.
+      		speed = b;   //This line gives a value to the variable speed.
+      		model = c;   //This line gives a value to the variable speed.
+	}
+      	public void colorSpeedModel(){   //This line creates the colorSpeedModel method.
+      		System.out.println("Color: " + color + " | Speed: " + speed + " | Model: " + model);   //This line decides what happens when this method is used.
+      	}
+      	public static void main(String[] args){   //This line creates the main method.
+      		Araba car = new Araba("siyah",115,"Şahin");   //This line creates the car object.
+      		car.colorSpeedModel();   //In this line, car object uses the colorSpeedModel method.
+      		System.out.println("Color = " + car.color + " | Speed = " + car.speed + " | Model = " + car.model);   //This line prints out the variables of the Araba class using the car object.
+      	}
+}
+	    </code></pre>
 </body>
 </html>
