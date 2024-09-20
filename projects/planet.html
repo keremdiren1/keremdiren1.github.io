@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Kerem Diren's Projects">
+	<title>Projects</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../web.css">
+</head>
+
+<body>
+		<h1 style="color:#191919;margin-left: 10px;font-size: 50px;text-align:center;">Projects</h1>
+		<p class="centered" style="text-align:center"><a href="https://keremdiren1.github.io">home</a> | <a href="../projects.html">projects</a> | <a href="../csa.html">csa</a></p>
+
+		<h3 class="centered" style="color: #191919;font-size: 25px">Car Object</h3>
+		<div class="centered">
+			<p style="margin-top:5px"><i>Tools: CS Code and Java | Source Code: <a href="https://github.com/keremdiren1/keremdiren1.github.io/blob/main/CS%20projects/Planet/Planet.java">GitHub</a></i></p>
+			<p>This code presents some data about 3 planets. Earth, Jupiter, and Mars. It also presents their distance from each other.</p>
+      <p></p>
+      <p>Differences Between First and Final Version:</p>
+      <p>TEXT</p>
+		<br>
+</body>
+</html>
+			<br>
+		</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Code Final Version</title>
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+	<h1>Planet Code Final Version</h1>
+    <pre><code>
+public class Planet{
+
+    private String name;
+    private double sunKm;
+    private int diameter;
+    private int moonNum;
+
+    public Planet(String n, double sK, int d, int mN){
+        name = n;
+        sunKm = sK;
+        diameter = d;
+        moonNum = mN;
+    }
+
+    public void TravelTime(String p, double a){
+        System.out.println("Travel time from " + name + " to " + p + ": " + Math.abs(a-sunKm)/0.05);
+    }
+
+    public void PInfo(){
+        System.out.println("Planet: " + name);
+        System.out.println("Distance from the Sun: " + sunKm + " million kilometers");
+        System.out.println("Diameter: " + diameter + " km");
+        System.out.println("Number of Moons: " + moonNum);
+    }
+
+
+    public static void main(String[] args){
+        Planet earth = new Planet("Earth",149.6,12742,1);
+        Planet mars = new Planet("Mars",227.9,6779,2);
+        Planet jupiter = new Planet("Jupiter",778.5,139820,79);
+
+        earth.PInfo();
+        System.out.println();
+        earth.TravelTime(jupiter.name,jupiter.sunKm);
+        System.out.println();
+
+        mars.PInfo();
+        System.out.println();
+        mars.TravelTime(earth.name,earth.sunKm);
+        System.out.println();
+
+        jupiter.PInfo();
+        System.out.println();
+        jupiter.TravelTime(mars.name,mars.sunKm);
+    }
+}
+	    </code></pre>
+  <p>Planet Code First Version</p>
+  <div>
+			<div style="width:100%; max-width:720px; height: 1670px; margin: auto">
+					<img class="image" src="../projects/planetCode1.png">
+					<div class="middle">
+					</div>
+				</div></a>
+		</div>
+</body>
+</html>
