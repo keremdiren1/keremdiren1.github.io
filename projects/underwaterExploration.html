@@ -53,7 +53,7 @@ public class UnderwaterExploration{
     int treasureNumber = 0;
     int zoneNum = 0;
 
-    public void SunlitZone(){
+    public void SunlitZone(){   //This method represents the Sunlit Zone
         zoneNum = 1;
         String name = "Sunlit Zone";
         int depthMin = 0;
@@ -61,12 +61,14 @@ public class UnderwaterExploration{
         double heat = 24.0;
         String species1 = "Coral Reefs";
         String species2 = "Fish";
-        int whichSpecies = (int) (Math.random() * 20);
+        int whichSpecies = (int) (Math.random() * 20);   //This line creates an int variable that is a random int between 0 and 20, exclusive.
 
+	    //These printlns print the information about this specific zone.
         System.out.println("You are now entering the " + name + " (" + depthMin + "-" + depthMax + " meters).");
         System.out.println("Temperature: " + (int) heat + "°C");
         System.out.println("Main Marine Life: " + species1 + ", " + species2);
 
+	    //This if, else if, and else statement makes it so that you have a chance to be damaged or to gain treasure.
         if (whichSpecies < 1){
             System.out.println("Oh no! A Coral Reef just bit you (somehow)!! You lost 9 HP :(");
             hitPoint -= 9;
@@ -88,7 +90,7 @@ public class UnderwaterExploration{
         System.out.println();
     }
 
-    public void TwilightZone(){
+    public void TwilightZone(){   //This method represents the Twilight Zone
         zoneNum = 2;
         String name = "Twilight Zone";
         int depthMin = 200;
@@ -96,12 +98,14 @@ public class UnderwaterExploration{
         double heat = 10.0;
         String species1 = "Jelly Fish";
         String species2 = "Squid";
-        int whichSpecies = (int) (Math.random() * 20);
+        int whichSpecies = (int) (Math.random() * 20);   //This line creates an int variable that is a random int between 0 and 20, exclusive.
 
+		//These printlns print the information about this specific zone.
         System.out.println("You are now entering the " + name + " (" + depthMin + "-" + depthMax + " meters).");
         System.out.println("Temperature: " + (int) heat + "°C");
         System.out.println("Main Marine Life: " + species1 + ", " + species2);
 
+		//This if, else if, and else statement makes it so that you have a chance to be damaged or to gain treasure.
         if (whichSpecies < 4){
             System.out.println("A Jelly Fish just poisoned you and sucked some of your flesh. You lost 8 HP");
             hitPoint -= 8;
@@ -123,7 +127,7 @@ public class UnderwaterExploration{
         System.out.println();
     }
 
-    public void MidnightZone(){
+    public void MidnightZone(){   //This method represents the Midnight Zone
         zoneNum = 3;
         String name = "Midnight Zone";
         int depthMin = 1000;
@@ -131,12 +135,14 @@ public class UnderwaterExploration{
         double heat = 4.0;
         String species1 = "Giant Squid";
         String species2 = "Angler Fish";
-        int whichSpecies = (int) (Math.random() * 20);
+        int whichSpecies = (int) (Math.random() * 20);   //This line creates an int variable that is a random int between 0 and 20, exclusive.
 
+		//These printlns print the information about this specific zone.
         System.out.println("You are now entering the " + name + " (" + depthMin + "-" + depthMax + " meters).");
         System.out.println("Temperature: " + (int) heat + "°C");
         System.out.println("Main Marine Life: " + species1 + ", " + species2);
 
+		//This if, else if, and else statement makes it so that you have a chance to be damaged or to gain treasure.
         if (whichSpecies >= 14){
             System.out.println("A Giant Squid attempted to swallow you whole. It successfully devoured some of your flesh. You lost 9 HP");
             hitPoint -= 9;
@@ -177,7 +183,8 @@ public class UnderwaterExploration{
             next = false;
         }
         System.out.println();
-        
+
+		//This while makes it so that you can move between zones. It asks you whether you want to continue or not, then, if you say yes, it goes to the next zone. It also makes it so that you win after you have 30 treasure, thought you can continue even after you win if you want to.
         while (zoneNum < 3 && next && hitPoint > 0){
             if (zoneNum == 0){
                 zone.SunlitZone();
@@ -214,6 +221,7 @@ public class UnderwaterExploration{
             }
 
             zoneNum = zone.zoneNum;
+			//This is the part that checks whether you won or not.
             if (treasureNumber >= 30 * (beatNum + 1)){
                 System.out.println("You have enough trasure; you successfully beat the sea and got your revenge. Do you want to continue? (yes/no):");
                 beatNum += 1;
@@ -229,6 +237,7 @@ public class UnderwaterExploration{
             }
             System.out.println();
         }
+			This code shows your final score after you lose, forfeit, or win.
         System.out.println("Final Hit Points: " + hitPoint);
         System.out.println("Total Treasure Collected: " + treasureNumber);
         if (beatNum > 0){
