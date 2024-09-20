@@ -53,18 +53,18 @@ public class Planet{
     private int diameter;
     private int moonNum;
 
-    public Planet(String n, double sK, int d, int mN){
+    public Planet(String n, double sK, int d, int mN){   //This is a constructor.
         name = n;
         sunKm = sK;
         diameter = d;
         moonNum = mN;
     }
 
-    public void TravelTime(String p, double a){
+    public void TravelTime(String p, double a){   //This method shows how much time it takes to travel from the given planet to the other one if we go 50000 km/h.
         System.out.println("Travel time from " + name + " to " + p + ": " + Math.abs(a-sunKm)/0.05);
     }
 
-    public void PInfo(){
+    public void PInfo(){   //This method shows the data of the set planet.
         System.out.println("Planet: " + name);
         System.out.println("Distance from the Sun: " + sunKm + " million kilometers");
         System.out.println("Diameter: " + diameter + " km");
@@ -72,7 +72,7 @@ public class Planet{
     }
 
 
-    public static void main(String[] args){
+    public static void main(String[] args){   //The main method just creates 3 objects and starts the methods that were previously set.
         Planet earth = new Planet("Earth",149.6,12742,1);
         Planet mars = new Planet("Mars",227.9,6779,2);
         Planet jupiter = new Planet("Jupiter",778.5,139820,79);
