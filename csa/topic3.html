@@ -35,8 +35,6 @@
             overflow-x: auto;
         }
     </style>
-</head>
-<body>
 	<h4>Example:</h4>
     <pre><code>
 if (a == b){
@@ -47,7 +45,7 @@ if (a == b){
 		<br>
 			<p>If a is equal to b, the code in the {} will activate.</p>
 			<p></p>
-			<p></p>
+			<p>if can also be used by not putting {}, but this makes it so that the if statement can only activate 1 line of code.</p>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <h4>Example:</h4>
@@ -64,18 +62,13 @@ if (a == b){
             overflow-x: auto;
         }
     </style>
-</head>
-<body>
 	<h4>Example:</h4>
     <pre><code>
-if (a == b){
-	/*code*/
-	/*code*/
-}
+
 	    </code></pre>
+			<p>If there was another line, it wouldn’t be in the if statement, so it would activate regardless of the value of (a == b).</p>
 			<p></p>
-			<p></p>
-			<p></p>
+			<p>We can add else to activate another code if the if statement didn’t work.</p>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <h4>Example:</h4>
@@ -92,16 +85,13 @@ if (a == b){
             overflow-x: auto;
         }
     </style>
-</head>
-<body>
 	<h4>Example:</h4>
     <pre><code>
-if (a == b){
-	/*code*/
-	/*code*/
-}
+
 	    </code></pre>
+			<p>In this case, the code below the else statement will activate because the if statement doesn't activate. If the if statement activated, it would just skip the code in the else statement.</p>
 			<p></p>
+			<p>We can add an else if statement to add another condition.</p>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <h4>Example:</h4>
@@ -118,16 +108,13 @@ if (a == b){
             overflow-x: auto;
         }
     </style>
-</head>
-<body>
 	<h4>Example:</h4>
     <pre><code>
-if (a == b){
-	/*code*/
-	/*code*/
-}
+
 	    </code></pre>
+			<p>In this case, only the code below the else if statement activates. This happens because the if statement isn’t true, so the else if statement works as if it’s an if statement. If the if statement was true, the else if statement wouldn’t activate and only the if statement would be activated.</p>
 			<p></p>
+			<p>&&, ||, and ! can be used to give new possibilities to activate the code. &&(and) makes it so that both sides of it should be true for it to be true. ||(or) makes it so that it would activate if 1 of its sides is true. !(not) makes the whole statement the opposite of the one before !(not).</p>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <h4>Example:</h4>
@@ -144,16 +131,13 @@ if (a == b){
             overflow-x: auto;
         }
     </style>
-</head>
-<body>
 	<h4>Example:</h4>
     <pre><code>
-if (a == b){
-	/*code*/
-	/*code*/
-}
+
 	    </code></pre>
+			<p>In this example, only the second if statement would activate. The 1st one doesn’t activate because 1 of its sides has the boolean value false. The 2nd one activates because 1 of its sides has the boolean value true. The 3rd one doesn’t activate because, even though it’s an ||(or), it has !(not) in front of the value that’s supposed to be true. This turns the (b >= c) to (b < ,c), which has the value false. Since both sides of the ||(or) is false, the resulting value is false.</p>
 			<p></p>
+			<p>|| doesn’t evaluate the second boolean statement if the first one is true.</p>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <h4>Example:</h4>
@@ -170,16 +154,13 @@ if (a == b){
             overflow-x: auto;
         }
     </style>
-</head>
-<body>
 	<h4>Example:</h4>
     <pre><code>
-if (a == b){
-	/*code*/
-	/*code*/
-}
+
 	    </code></pre>
+			<p>This doesn’t give an error because the first statement is true, so it just skips the second.</p>
 			<p></p>
+			<p>This also works with &&.</p>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <h4>Example:</h4>
@@ -196,16 +177,16 @@ if (a == b){
             overflow-x: auto;
         }
     </style>
-</head>
-<body>
 	<h4>Example:</h4>
     <pre><code>
-if (a == b){
-	/*code*/
-	/*code*/
-}
+
 	    </code></pre>
+			<p>In this case, (a != null) is false, so it doesn’t look into the second expression. If it did look into the second expression, it would give an error because adding 3 with no value(null) wouldn’t be possible. This makes it so that the code doesn’t have an error in it.</p>
 			<p></p>
+			<p>De Morgan’s Laws:</p>
+			<p>Writing ! in front of anything will reverse it. If there is an ! in front of something like (a == 0 && b == c), the whole expression would turn into (a != 0 || b != c).</p>
+			<p></p>
+			<p>Using == with Strings is a bit more complicated than using it with integers. Using it with Strings only checks whether it references the same object. Using String1.equals(String2) checks whether their values are the same or not.</p>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <h4>Example:</h4>
@@ -222,16 +203,36 @@ if (a == b){
             overflow-x: auto;
         }
     </style>
-</head>
-<body>
 	<h4>Example:</h4>
     <pre><code>
-if (a == b){
-	/*code*/
-	/*code*/
-}
+
 	    </code></pre>
+			<p>Only the code below the 2nd and 3rd ifs would be activated because Str1 doesn’t reference the same object with Str2, while Str3 references the same object with Str1. The 3rd if works because the String1.equals(String2) checks whether their values are the same or not.</p>
 			<p></p>
+			<p></p>
+			<p></p>
+			<p>If a code is written like</p>
+				<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h4>Example:</h4>
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+	<h4>Example:</h4>
+    <pre><code>
+
+	    </code></pre>
+			<p>The else statement would belong to the closest if statement, which is if (b == c). For it to belong to the first one, it has to use {}.</p>
 			<br>
 		</div>
 </body>
