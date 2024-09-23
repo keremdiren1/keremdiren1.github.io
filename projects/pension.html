@@ -56,7 +56,7 @@ public class Pension{
             year = -1;
             balance = -1.0;
             percentage = -1;
-            deducted = -1.0;
+            deducted = -1.0;   //This part resets some values so that the for loop works as intended.
             System.out.println("What is your balance? (double)");
             balance = input.nextDouble();
             if (balance != -1.0){
@@ -70,29 +70,17 @@ public class Pension{
                         year = input.nextInt();
                     }
                 }
-            }
+            }   //These ifs get input from the user to assign to variables.
             for (int a = 0; a < year; a++){
                 balance -= deducted;
                 balance += balance / 100 * percentage;
-            }
-            if (i == 0 && balance >= 0){
-                System.out.println("TRUE");
-            }
-            else if (i == 1 && balance >= 0){
-                System.out.println("TRUE");
-            }
-            else if (i == 2 && balance >= 0){
-                System.out.println("TRUE");
-            }
-            else if (i == 3 && balance >= 0){
-                System.out.println("TRUE");
-            }
-            else if (i == 4 && balance >= 0){
+            }   //This part calculates the final balance.
+            if (balance >= 0){
                 System.out.println("TRUE");
             }
             else{
                 System.out.println("FALSE");
-            }
+            }   //This part prints out TRUE or FALSE depending on the value of balance.
             System.out.println();
         }
     }
