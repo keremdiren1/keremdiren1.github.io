@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Kerem Diren's Projects">
+	<title>Projects</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../web.css">
+</head>
+
+<body>
+		<h1 style="color:#191919;margin-left: 10px;font-size: 50px;text-align:center;">Projects</h1>
+		<p class="centered" style="text-align:center"><a href="https://keremdiren1.github.io">home</a> | <a href="../projects.html">projects</a> | <a href="../csa.html">csa</a></p>
+
+		<h3 class="centered" style="color: #191919;font-size: 25px">Car Object</h3>
+		<div class="centered">
+			<p style="margin-top:5px"><i>Tools: CS Code and Java | Source Code: <a href="https://github.com/keremdiren1/keremdiren1.github.io/blob/main/CS%20projects/Pension/Pension.java">GitHub</a></i></p>
+			<p>TEXT</p>
+		<br>
+</body>
+</html>
+			<br>
+		</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pension Code First and Final Version</title>
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+	<h1>Pension Code First and Final Version</h1>
+    <pre><code>
+import java.util.*;
+public class Pension{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        double balance;
+        double deducted;
+        double percentage;
+        int year;
+
+        for (int i = 0; i < 5; i++){
+            year = -1;
+            balance = -1.0;
+            percentage = -1;
+            deducted = -1.0;
+            System.out.println("What is your balance? (double)");
+            balance = input.nextDouble();
+            if (balance != -1.0){
+                System.out.println("What amount is deducted from your balance? (double)");
+                deducted = Math.abs(input.nextDouble());
+                if (deducted != -1.0){
+                    System.out.println("What percentage do you add to your balance? (double)");
+                    percentage = input.nextDouble();
+                    if (percentage != -1.0){
+                        System.out.println("How many years does this continue? (int)");
+                        year = input.nextInt();
+                    }
+                }
+            }
+            for (int a = 0; a < year; a++){
+                balance -= deducted;
+                balance += balance / 100 * percentage;
+            }
+            if (i == 0 && balance >= 0){
+                System.out.println("TRUE");
+            }
+            else if (i == 1 && balance >= 0){
+                System.out.println("TRUE");
+            }
+            else if (i == 2 && balance >= 0){
+                System.out.println("TRUE");
+            }
+            else if (i == 3 && balance >= 0){
+                System.out.println("TRUE");
+            }
+            else if (i == 4 && balance >= 0){
+                System.out.println("TRUE");
+            }
+            else{
+                System.out.println("FALSE");
+            }
+            System.out.println();
+        }
+    }
+}
+	    </code></pre>
+</body>
+</html>
