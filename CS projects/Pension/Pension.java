@@ -30,19 +30,7 @@ public class Pension{
                 balance -= deducted;
                 balance += balance / 100 * percentage;
             }
-            if (i == 0 && balance >= 0){
-                System.out.println("TRUE");
-            }
-            else if (i == 1 && balance >= 0){
-                System.out.println("TRUE");
-            }
-            else if (i == 2 && balance >= 0){
-                System.out.println("TRUE");
-            }
-            else if (i == 3 && balance >= 0){
-                System.out.println("TRUE");
-            }
-            else if (i == 4 && balance >= 0){
+            if (balance >= 0){
                 System.out.println("TRUE");
             }
             else{
