@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Kerem Diren's Projects">
+	<title>Projects</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../web.css">
+</head>
+
+<body>
+		<h1 style="color:#191919;margin-left: 10px;font-size: 50px;text-align:center;">Projects</h1>
+		<p class="centered" style="text-align:center"><a href="https://keremdiren1.github.io">home</a> | <a href="../projects.html">projects</a> | <a href="../csa.html">csa</a></p>
+
+		<h3 class="centered" style="color: #191919;font-size: 25px">Cities</h3>
+		<div class="centered">
+			<p style="margin-top:5px"><i>Tools: CS Code and Java | Source Code: <a href="https://github.com/keremdiren1/keremdiren1.github.io/blob/main/CS%20projects/Cities/Cities.java">GitHub</a></i></p>
+			<p>TEXT</p>
+		<br>
+</body>
+</html>
+			<br>
+		</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cities Code</title>
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+	<h1>Cities Code</h1>
+    <pre><code>
+public class Cities{
+    private String name;
+    private int population;   //These variables are the attributes of the Cities class.
+
+    public Cities(String n, int p){
+        name = n;
+        population = p;
+    }   //This is a constructor.
+
+    public int compareToByPopulation(int p){
+        return population - p;
+    }   //This returns the population of the object - number entered into the parameter.
+
+    public String compareToByName(String n){
+        if (name.compareTo(n) < 0){
+            return "before";
+        }
+        else if (name.compareTo(n) > 0){
+            return "after";
+        }
+        else{
+            return "same";
+        }
+    }   //This deicdes whether the object comes before or after the String entered into the parameter.
+
+    public static void main(String[] args){
+        Cities city1 = new Cities("New York", 8419000);
+        Cities city2 = new Cities("Los Angeles", 3980000);
+        Cities city3 = new Cities("Chicago", 2716000);   //Three objects made up of the Cities class.
+
+        System.out.println("Comparing by name:");   //The remaining code is the code made up of methods to compare the two cities entered.
+        if (city1.compareToByName(city2.name).equals("same")){
+            System.out.println(city1.name + " is at the same place as " + city2.name);
+        }
+        else{
+            System.out.println(city1.name + " comes " + city1.compareToByName(city2.name) + " " + city2.name);
+        }
+        System.out.println("Comparing by population:");
+        if (city1.compareToByPopulation(city2.population) > 0){
+            System.out.println(city1.name + " has " + city1.compareToByPopulation(city2.population) + " more population than " + city2.name);
+        }
+        else if (city1.compareToByPopulation(city2.population) < 0){
+            System.out.println(city1.name + " has " + Math.abs(city1.compareToByPopulation(city2.population)) + " less population than " + city2.name);
+        }
+        else{
+            System.out.println(city1.name + " has the same amount of population as " + city2.name);
+        }
+        System.out.println();
+
+        System.out.println("Comparing by name:");
+        if (city1.compareToByName(city3.name).equals("same")){
+            System.out.println(city1.name + " is at the same place as " + city3.name);
+        }
+        else{
+            System.out.println(city1.name + " comes " + city1.compareToByName(city3.name) + " " + city3.name);
+        }
+        System.out.println("Comparing by population:");
+        if (city1.compareToByPopulation(city3.population) > 0){
+            System.out.println(city1.name + " has " + city1.compareToByPopulation(city3.population) + " more population than " + city3.name);
+        }
+        else if (city1.compareToByPopulation(city3.population) < 0){
+            System.out.println(city1.name + " has " + Math.abs(city1.compareToByPopulation(city3.population)) + " less population than " + city3.name);
+        }
+        else{
+            System.out.println(city1.name + " has the same amount of population as " + city3.name);
+        }
+        System.out.println();
+
+        System.out.println("Comparing by name:");
+        if (city3.compareToByName(city2.name).equals("same")){
+            System.out.println(city3.name + " is at the same place as " + city2.name);
+        }
+        else{
+            System.out.println(city3.name + " comes " + city3.compareToByName(city2.name) + " " + city2.name);
+        }
+        System.out.println("Comparing by population:");
+        if (city3.compareToByPopulation(city2.population) > 0){
+            System.out.println(city3.name + " has " + city3.compareToByPopulation(city2.population) + " more population than " + city2.name);
+        }
+        else if (city3.compareToByPopulation(city2.population) < 0){
+            System.out.println(city3.name + " has " + Math.abs(city3.compareToByPopulation(city2.population)) + " less population than " + city2.name);
+        }
+        else{
+            System.out.println(city3.name + " has the same amount of population as " + city2.name);
+        }
+    }
+}
+	    </code></pre>
+</body>
+</html>
