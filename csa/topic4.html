@@ -16,7 +16,179 @@
 		<h3 class="centered" style="color: #191919;font-size: 25px">AP CSA Topic 4</h3>
 		<div class="centered">
 			<p style="margin-top:5px"><i>Taken Notes:</a></i></p>
-			<p>TEXT</p>
+			<p>A while loop starts only when the condition of it is fulfilled. After it starts once, it doesn’t stop repeating until its condition is unfulfilled.</p>
+			<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+	<h4>Example:</h4>
+    <pre><code>
+while (a<10){
+	a++;
+}
+System.out.println(a);
+	    </code></pre>
+			<p>This will print out 10 because a increases by 1 until the while loop stops, which happens when a is greater than or equal to 10.</p>
+			<p></p>
+			<p>If the condition is unfulfilled while the current loop isn’t finished, the loop continues until it gets to the end, then it finishes.</p>
+			<p></p>
+			<p>for loops are a bit more complicated than while loops. They also continue until their condition is fulfilled, but they can also have a private variable unique to them. You also need to initialize the variable, and you need to indicate how much it will increase every time it finishes.</p>
+			<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+	<h4>Example:</h4>
+    <pre><code>
+for (int i = 0; i < 5; i++){
+	System.out.print(i);
+}
+	    </code></pre>
+			<p>This would print out 01234 because the variable increases every time the loop finishes. The (int i = 0) part is the part that creates and initializes the private variable. The (i++) part is the part that shows how much the i will increase every time the loop finishes. The (i < 5) part is the condition of the loop.</p>
+			<p></p>
+			<p>The condition part doesn’t need to have the private variable (i in this case) in it, it can have any other variable.</p>
+			<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+	<h4>Example:</h4>
+    <pre><code>
+int a = 0;
+for (int i = 0; a < 13; i++){
+	a += i;
+}
+System.out.println(a);
+	    </code></pre>
+			<p>This would print out 15 because a is increased by i every time the loop starts and i is increased by 1 every time the loop ends. When the loop ends, which requires a to be more than or equal to 13, a is 15 because it was increased by i when i was 0, 1, 2, 3, 4, and 5.</p>
+			<p></p>
+			<p>A nested for loop is just a for loop inside a for loop, nothing much complicated.</p>
+			<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+	<h4>Example:</h4>
+    <pre><code>
+for (int i = 0; i < 5; i++){
+	for (int a = 0; a < i; a++){
+		System.out.print("*");
+	}
+	System.out.println();
+}
+	    </code></pre>
+			<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+	<h4>This would print:</h4>
+    <pre><code>
+
+*
+**
+***
+****
+	    </code></pre>
+			<p></p>
+			<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+	<h4>Or you can do this:</h4>
+    <pre><code>
+for (int i = 0; i < 5; i++){
+	for (int a = 0; a < 3; a++){   // i is changed to 3
+		System.out.print(“*”);
+	}
+	System.out.println();
+}
+	    </code></pre>
+			<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+	<h4>This would print:</h4>
+    <pre><code>
+***
+***
+***
+***
+***
+	    </code></pre>
 		<br>
 </body>
 </html>
