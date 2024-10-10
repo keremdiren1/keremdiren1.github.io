@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Kerem Diren's Projects">
+	<title>Projects</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../web.css">
+</head>
+
+<body>
+		<h1 style="color:#191919;margin-left: 10px;font-size: 50px;text-align:center;">Projects</h1>
+		<p class="centered" style="text-align:center"><a href="https://keremdiren1.github.io">home</a> | <a href="../projects.html">projects</a> | <a href="../csa.html">csa</a></p>
+
+		<h3 class="centered" style="color: #191919;font-size: 25px">Smart Door</h3>
+		<div class="centered">
+			<p style="margin-top:5px"><i>Tools: CS Code and Java | Source Code: <a href="https://github.com/keremdiren1/keremdiren1.github.io/blob/main/CS%20projects/Student/Student.java">GitHub</a></i></p>
+			<p>TEXT</p>
+      <p></p>
+      <p>Differences Between First and Final Version:</p>
+      <p>None.</p>
+		<br>
+</body>
+</html>
+			<br>
+		</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Door Code Final Version</title>
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+	<h3>Smart Door Code Final Version</h3>
+    <pre><code>
+public class SmartDoor{
+    private boolean locked;
+    private int peopleInside;
+
+    public SmartDoor(boolean b, int i){
+        locked = b;
+        peopleInside = i;
+    }
+
+    public boolean isSafeToEnter(){
+        if (locked == false && peopleInside < 5){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public static void main(String[] args){
+        SmartDoor door1 = new SmartDoor(false, 4);
+        SmartDoor door2 = new SmartDoor(true, 0);
+        SmartDoor door3 = new SmartDoor(false, 6);
+
+        System.out.println(door1.isSafeToEnter());
+        System.out.println(door2.isSafeToEnter());
+        System.out.println(door3.isSafeToEnter());
+    }
+}
+	    </code></pre>
+  <h3>Smart Door Code First Version</h3>
+  <div>
+			<div style="width:100%; max-width:720px; height: 1670px; margin: auto">
+					<img class="image" src="../projects/smartDoor.png">
+					<div class="middle">
+					</div>
+				</div></a>
+		</div>
+</body>
+</html>
