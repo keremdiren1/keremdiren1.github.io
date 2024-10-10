@@ -1,5 +1,5 @@
 public class CitiesCompare{
-    public void CompareCities(String n, String m){   //I made the type void and made the first C upper case.
+    public void CompareCities(String n, String m){
         if (n.compareTo(m) < 0){
             System.out.println(n + " comes before " + m + " alphabetically");
         }
