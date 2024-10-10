@@ -1,5 +1,5 @@
 public class Student{
-    private double GPA;   //I made these variables private.
+    private double GPA;
     private int attendance;
     private boolean honorStatus;
 
