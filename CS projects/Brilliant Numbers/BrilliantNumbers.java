@@ -1,7 +1,7 @@
 import java.util.*;
 public class BrilliantNumbers{
     public static void main(String[] args){
-    Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         for (int k = 1; k <= 5; k++){
             System.out.println("Enter a positive integer less than 2147483648.");
             System.out.print("Input " + k + ": ");
