@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Kerem Diren's Projects">
+	<title>Projects</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../web.css">
+</head>
+
+<body>
+		<h1 style="color:#191919;margin-left: 10px;font-size: 50px;text-align:center;">Projects</h1>
+		<p class="centered" style="text-align:center"><a href="https://keremdiren1.github.io">home</a> | <a href="../projects.html">projects</a> | <a href="../csa.html">csa</a></p>
+
+		<h3 class="centered" style="color: #191919;font-size: 25px">Basamak</h3>
+		<div class="centered">
+			<p style="margin-top:5px"><i>Tools: VS Code and Java | Source Code: <a href="https://github.com/keremdiren1/keremdiren1.github.io/blob/main/CS%20projects/Basamak/Basamak.java">GitHub</a></i></p>
+			<p>This code requests a number from the user and presents the number present in each digit, shows how many digits the number has, and presents the addition of its digits.</p>
+		<br>
+</body>
+</html>
+			<br>
+		</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basamak Code</title>
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+	<h3>Basamak Code</h3>
+    <pre><code>
+import java.util.*;
+public class Basamak{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int number = input.nextInt();   //We get an input from the user.
+        int basamakNum = 0;   //We initialize the variable that will give us the number of digits.
+        int toplamBasamak = 0;   //We initialize the variable that will contain the addition of digits of the number.
+        while (number != 0){   //A while loop starts that stops when the number is zero. Since the number decreases a digit each time the while loop iterates, the loop iterates as much as the number of digits the number has.
+            basamakNum += 1;   //Since the loop works as much as the number of digits, increasing this number by 1 every time the loop iterates presents us with the number of digits.
+            System.out.println(basamakNum + ". basamak " + number % 10);   //This line prints the current digit and the number at that digit.
+            toplamBasamak += number % 10;   //This line adds the value of the number at the current digit to this variable, which results in the addition of digits after the loop ends.
+            number /= 10;   //This line updates the number variable so that the loop updates every time it iterates.
+        }
+        System.out.println("Basamak Sayısı: " + basamakNum +"\nBasamakların Toplamı: " + toplamBasamak);   //This line prints the number of digits and the addition of digits of the inputted number.
+    }
+}
+	    </code></pre>
+</body>
+</html>
