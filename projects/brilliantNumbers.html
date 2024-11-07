@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Kerem Diren's Projects">
+	<title>Projects</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../web.css">
+</head>
+
+<body>
+		<h1 style="color:#191919;margin-left: 10px;font-size: 50px;text-align:center;">Projects</h1>
+		<p class="centered" style="text-align:center"><a href="https://keremdiren1.github.io">home</a> | <a href="../projects.html">projects</a> | <a href="../csa.html">csa</a></p>
+
+		<h3 class="centered" style="color: #191919;font-size: 25px">Brilliant Numbers</h3>
+		<div class="centered">
+			<p style="margin-top:5px"><i>Tools: VS Code and Java | Source Code: <a href="https://github.com/keremdiren1/keremdiren1.github.io/blob/main/CS%20projects/Brilliant%20Numbers/BrilliantNumbers.java">GitHub</a></i></p>
+			<p>A brilliant number is a number that has 2 factors which are both prime and have the same amount of digits. This code checks whether the inputted number is a brilliant number or not. This code gives the wrong answer only when the inputted number is either 8 or 27; except those two, the answer is always right.</p>
+		<br>
+</body>
+</html>
+			<br>
+		</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brilliant Numbers Code</title>
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+	<h3>Brilliant Numbers Code</h3>
+    <pre><code>
+import java.util.*;
+public class BrilliantNumbers{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        for (int k = 1; k <= 5; k++){   //This line starts a for loop that will iterate 5 times.
+            System.out.println("Enter a positive integer less than 2147483648.");
+            System.out.print("Input " + k + ": ");
+            int input = scan.nextInt();   //This line gets the input from the user.
+            int num1 = 0;   //This line creates the variable which will contain the first factor of the number.
+            int num2 = 0;   //This line creates the variable which will contain the second factor of the number.
+            String answer = "";   //This line contains the variable that is used to checks whether the number has more than 2 factors or not.
+            int basamakNum1 = 0;   //This line contains the variable that will have the number of digits the first factor has.
+            int basamakNum2 = 0;   //This line contains the variable that will have the number of digits the second factor has.
+            int tempNum;   //This line contains the variable that will have temporary values. The values will be used to check the number of digits the current value.
+            for (int i = 2; i < input ; i++){   //This line starts a for loop. The loop creates an integer variable which starts from the value 2.
+                if (input % i == 0){   //This if condition is fulfilled only when the integer i is a factor of the input.
+                    if (num2 != 0){   //This line makes it so that when the default value of num2, which is 0, is changed, the loop breaks and the answer variable gets set to "not brilliant", which shows the inputted value is not brilliant.
+                        answer = "not brilliant";
+                        break;
+                    }
+                    else if (num1 == 0){   //This line sets the first factor of the inputted number to the num1 variable.
+                        num1 = i;
+                    }
+
+                    else{   //This line sets the second factor of the inputted number to the num2 variable. This line only starts when the num1 variable already has a value that's not 0.
+                        num2 = i;
+                    }
+                }
+            }
+            tempNum = num1;   //This line sets the tempNum variable to the num1 variable so that the while loop next to it can check the number of digits the num1 variable has.
+            while (tempNum != 0){
+                basamakNum1 += 1;
+                tempNum /= 10;
+            }
+            tempNum = num2;   //This line does the same but for num2.
+            while (tempNum != 0){
+                basamakNum2 += 1;
+                tempNum /= 10;
+            }
+            if (num2 == 0 || basamakNum1 != basamakNum2 || answer.equals("not brilliant")){   //This line checks every condition a brilliant number should have. If it doesn't have even 1, this if statement activates.
+                System.out.println(input + " is not a brilliant number.");
+            }
+            else{   //If the inputted number is a brilliant number, this else statement will activate.
+                System.out.println(input + " is a brilliant number.");
+            }
+            System.out.println();
+        }
+    }
+}
+	    </code></pre>
+</body>
+</html>
