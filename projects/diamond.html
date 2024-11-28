@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Kerem Diren's Projects">
+	<title>Projects</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../web.css">
+</head>
+
+<body>
+		<h1 style="color:#191919;margin-left: 10px;font-size: 50px;text-align:center;">Projects</h1>
+		<p class="centered" style="text-align:center"><a href="https://keremdiren1.github.io">home</a> | <a href="../projects.html">projects</a> | <a href="../csa.html">csa</a></p>
+
+		<h3 class="centered" style="color: #191919;font-size: 25px">Diamond</h3>
+		<div class="centered">
+			<p style="margin-top:5px"><i>Tools: VS Code and Java | Source Code: <a href="https://github.com/keremdiren1/keremdiren1.github.io/tree/main/CS%20projects/Diamond">GitHub</a></i></p>
+			<p>This code creates diamonds from some *. There's a half diamond, reverse half diamond, full damond, full + half diamond, half diamond from characters, full diamond from characters, and a flexible diamond.</p>
+		<br>
+</body>
+</html>
+			<br>
+		</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Code</title>
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+	<h3>Diamond Code</h3>
+    <pre><code>
+public class Diamond{
+
+    public void HalfDiamond(){
+        for (int i = 1; i <= 5; i++){   // i increases by 1 each iteration.
+            for (int k = 0; k < i; k++){   // iterates as much as i.
+                System.out.print("*");
+            }
+            System.out.println();
+            System.out.println();
+        }
+    }
+
+    public void InvertedHalfDiamond(){
+        for (int i = 5; i >= 1; i--){   // i decreases by 1 each iteration.
+            for (int k = 0; k < i; k++){   // iterates as much as i.
+                System.out.print("*");
+            }
+            System.out.println();
+            System.out.println();
+        }
+    }
+
+    public void FullDiamond(){
+        for (int i = 4; i >= -4; i--){   // i decreases 1 each iteration and goes from 4 to -4.
+            for (int k = 0; k < Math.abs(i); k++){   // Creates spaces as much as the absolute value of i.
+                System.out.print(" ");
+            }
+            for (int p = 8; p > Math.abs(i) * 2; p--){   // Creates * as much as 2 times the number of (iterations - 1) * 2.
+                System.out.print("*");
+            }
+            System.out.println("*");   // Creates one * so that we have enough *.
+            System.out.println();
+        }
+    }
+
+    public void HalfPlusFullDiamond(){
+        for (int i = 4; i >= 0; i--){
+            for (int k = 0; k < i; k++){
+                System.out.print(" ");
+            }
+            for (int p = 8; p > i * 2; p--){
+                System.out.print("*");
+            }
+            System.out.print("*");
+            for (int k = 0; k < i; k++){   // Same code until here. After this point this creates as much space as before.
+                System.out.print(" ");
+            }
+            for (int n = 5; n > i; n--){   // This for loop is similar to the half diamond code.
+                System.out.print("*");
+            }
+            System.out.println();
+            System.out.println();
+        }
+    }
+
+    public void HalfStringDiamond(){   // This is the half diamond code except the * are replaced by some characters.
+        for (int i = 1; i <= 5; i++){
+            for (int k = 0; k < i; k++){
+                if (i == 1){
+                    System.out.print("A");
+                }
+                else if (i == 2){
+                    System.out.print("B");
+                }
+                else if (i == 3){
+                    System.out.print("C");
+                }
+                else if (i == 4){
+                    System.out.print("D");
+                }
+                else{
+                    System.out.print("E");
+                }
+            }
+            System.out.println();
+            System.out.println();
+        }
+    }
+
+    public void FullStringDiamond(){   // This is the full diamond code except the * are replaced by some characters.
+        for (int i = 4; i >= -4; i--){
+            for (int k = 0; k < Math.abs(i); k++){
+                System.out.print(" ");
+            }
+            for (int p = 8; p > Math.abs(i) * 2; p--){
+                if (i == 3){
+                    System.out.print("B");
+                }
+                else if (i == 2){
+                    System.out.print("C");
+                }
+                else if (i == 1){
+                    System.out.print("D");
+                }
+                else if (i == 0){
+                    System.out.print("E");
+                }
+                else if (i == -1){
+                    System.out.print("F");
+                }
+                else if (i == -2){
+                    System.out.print("G");
+                }
+                else if (i == -3){
+                    System.out.print("H");
+                }
+            }
+            if (i == 4){
+                System.out.println("A");
+            }
+            else if (i == 3){
+                System.out.println("B");
+            }
+            else if (i == 2){
+                System.out.println("C");
+            }
+            else if (i == 1){
+                System.out.println("D");
+            }
+            else if (i == 0){
+                System.out.println("E");
+            }
+            else if (i == -1){
+                System.out.println("F");
+            }
+            else if (i == -2){
+                System.out.println("G");
+            }
+            else if (i == -3){
+                System.out.println("H");
+            }
+            else if (i == -4){
+                System.out.println("I");
+            }
+            System.out.println();
+        }
+    }
+
+    public void FlexibleDiamond(int n){   // This is the full diamond code except there is a custom number of iterations.
+        for (int i = n; i >= -n; i--){
+            for (int k = 0; k < Math.abs(i); k++){
+                System.out.print(" ");
+            }
+            for (int p = n * 2; p > Math.abs(i) * 2; p--){
+                System.out.print("*");
+            }
+            System.out.println("*");
+            System.out.println();
+        }
+    }
+
+
+    public static void main(String[] args){   // main method uses the created methods so that the diamonds are created.
+        Diamond elmas = new Diamond();
+        elmas.HalfDiamond();
+        System.out.println();
+        System.out.println();
+        elmas.InvertedHalfDiamond();
+        System.out.println();
+        System.out.println();
+        elmas.FullDiamond();
+        System.out.println();
+        System.out.println();
+        elmas.HalfPlusFullDiamond();
+        System.out.println();
+        System.out.println();
+        elmas.HalfStringDiamond();
+        System.out.println();
+        System.out.println();
+        elmas.FullStringDiamond();
+        System.out.println();
+        System.out.println();
+        elmas.FlexibleDiamond(7);
+    }
+}
+	    </code></pre>
+</body>
+</html>
