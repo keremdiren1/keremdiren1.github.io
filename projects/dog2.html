@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Kerem Diren's Projects">
+	<title>Projects</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../web.css">
+</head>
+
+<body>
+		<h1 style="color:#191919;margin-left: 10px;font-size: 50px;text-align:center;">Projects</h1>
+		<p class="centered" style="text-align:center"><a href="https://keremdiren1.github.io">home</a> | <a href="../projects.html">projects</a> | <a href="../csa.html">csa</a></p>
+
+		<h3 class="centered" style="color: #191919;font-size: 25px">Dog 2</h3>
+		<div class="centered">
+			<p style="margin-top:5px"><i>Tools: VS Code and Java | Source Code: <a href="https://github.com/keremdiren1/keremdiren1.github.io/blob/main/CS%20projects/Dog2/Dog2.java">GitHub</a></i></p>
+			<p>This code is an example of the usage of a static variable and two get methods.</p>
+		<br>
+</body>
+</html>
+			<br>
+		</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog 2 Code</title>
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+	<h3>Dog 2 Code</h3>
+    <pre><code>
+public class Dog2{
+    private String breed;
+    private static int dogNumber;
+
+    public Dog2(String b){
+        breed = b;
+        dogNumber += 1;
+    }
+
+
+    public static int getDogNumber(){
+        return dogNumber;
+    }
+
+    public String getBreed(){
+        return breed;
+    }
+}
+	    </code></pre>
+  <h3>Testing Class</h3>
+  <pre><code>
+public class Dog2Test{
+    public static void main(String[] args){
+        Dog2 köpek1 = new Dog2("insan");
+        Dog2 köpek2 = new Dog2("Çorba");
+
+        System.out.println(köpek1.getBreed());
+        System.out.println(köpek2.getBreed());
+        System.out.println(Dog2.getDogNumber());
+    }
+}
+    </code></pre>
+</body>
+</html>
