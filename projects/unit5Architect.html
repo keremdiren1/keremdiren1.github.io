@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Kerem Diren's Projects">
+	<title>Projects</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../web.css">
+</head>
+
+<body>
+		<h1 style="color:#191919;margin-left: 10px;font-size: 50px;text-align:center;">Projects</h1>
+		<p class="centered" style="text-align:center"><a href="https://keremdiren1.github.io">home</a> | <a href="../projects.html">projects</a> | <a href="../csa.html">csa</a></p>
+
+		<h3 class="centered" style="color: #191919;font-size: 25px">Array Creator</h3>
+		<div class="centered">
+			<p style="margin-top:5px"><i>Tools: VS Code and Java | Source Code: <a href="https://github.com/keremdiren1/keremdiren1.github.io/blob/main/CS%20projects/Unit%205%20Architect/unit5Architect.java">GitHub</a></i></p>
+			<p>This code makes a class that has a method that can check the length of a string, a method that can reverse a string, a method that can add a string to the middle of a string, and a method that apply caesar cipher to the string.</p>
+		<br>
+</body>
+</html>
+			<br>
+		</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 5 Architect Code</title>
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+	<h3>Unit 5 Architect Code</h3>
+    <pre><code>
+public class unit5Architect{
+    private String str;
+
+    public unit5Architect(String s){
+        str = s;
+    }
+
+
+    public int count(){
+        int n = 0;
+        str += Character.toString((char) 5000);
+        for (int i = 0; !(str.substring(i, i+1).equals(Character.toString((char) 5000))); i++){
+            n = i + 1;
+        }
+        str = str.substring(0, str.length() - 1);
+        return n;
+    }
+
+    public void reverse(){
+        String newStr = "";
+        for (int i = str.length() - 1; i > -1; i--){
+            newStr += str.substring(i, i+1);
+        }
+        str = newStr;
+    }
+
+    public void divide(String strAdd){
+        str = str.substring(0, str.length() / 2) + strAdd + str.substring(str.length() / 2);
+    }
+
+    public String caesarCipher(int change){
+        String newWord = "";
+        for (int i = 0; i < str.length(); i++){
+            newWord += Character.toString((char) ((Character.getNumericValue(str.charAt(i)) - 10 + change + 26) % 26 + 97));
+        }
+        return newWord;
+    }
+
+    public static void main(String[] args){
+        unit5Architect aa = new unit5Architect("aaazzz");
+        System.out.println(aa.str);
+        System.out.println(aa.count());
+        aa.reverse();
+        System.out.println(aa.str);
+        aa.divide("iii");
+        System.out.println(aa.str);
+        System.out.println(aa.caesarCipher(-5));
+    }
+}
+	    </code></pre>
+</body>
+</html>
