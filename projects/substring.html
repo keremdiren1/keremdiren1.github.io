@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Kerem Diren's Projects">
+	<title>Projects</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../web.css">
+</head>
+
+<body>
+		<h1 style="color:#191919;margin-left: 10px;font-size: 50px;text-align:center;">Projects</h1>
+		<p class="centered" style="text-align:center"><a href="https://keremdiren1.github.io">home</a> | <a href="../projects.html">projects</a> | <a href="../csa.html">csa</a></p>
+
+		<h3 class="centered" style="color: #191919;font-size: 25px">Substring</h3>
+		<div class="centered">
+			<p style="margin-top:5px"><i>Tools: VS Code and Java | Source Code: <a href="https://github.com/keremdiren1/keremdiren1.github.io/blob/main/CS%20projects/Substring/Stringg.java">GitHub</a></i></p>
+			<p>This code creates a substring method.</p>
+		<br>
+</body>
+</html>
+			<br>
+		</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Substring Code</title>
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+	<h3>Substring Code</h3>
+    <pre><code>
+public class Stringg{
+    public String str;
+
+    public Stringg(String s){
+        str = s;
+    }
+
+    public String substring(int a, int b){
+        String newStr = "";
+        if (a < 0 || a > b || b > str.length() || a > str.length() || b < 0){
+            System.out.println("Error");
+        }
+        else{
+            for (int i = a; i < b; i++){
+                for (int k = 0; k < 65536; k++){
+                    if (str.indexOf(Character.toString((char) k)) == i){
+                        newStr = newStr + Character.toString((char) k);
+                    }
+                }
+            }
+        }
+        
+        return newStr;
+    }
+
+    public static void main(String[] args){
+        Stringg aa = new Stringg("abcdef");
+        System.out.println(aa.substring(2,4));
+    }
+}
+    </code></pre>
+</body>
+</html>
