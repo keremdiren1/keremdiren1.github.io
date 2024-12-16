@@ -1,4 +1,3 @@
-//ortadan böl, length, reverse word // caesar chipper
 public class unit5Architect{
     private String str;
 
