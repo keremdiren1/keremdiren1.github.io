@@ -13,7 +13,7 @@ public class ArrayP1{
             String number = input.nextLine();
             boolean isNumber = true;
             for (int k = 0; k < number.length(); k++){
-                if ("-0123456789".indexOf(number.substring(k,k+1)) == -1){
+                if ("-0123456789".indexOf(number.substring(k,k+1)) == -1 || number.equals("")){
                     isNumber = false;
                 }
             }
