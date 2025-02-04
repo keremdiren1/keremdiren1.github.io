@@ -88,6 +88,15 @@
   opacity: 1;
 }
 
+.centeredphoto:hover .image {
+  opacity: 0.3;
+  transform: scale(1.05)
+}
+
+.centeredphoto:hover .middle {
+  opacity: 1;
+}
+
 .text {
   background-color: white;
   font-family: Nunito, Helvetica;
