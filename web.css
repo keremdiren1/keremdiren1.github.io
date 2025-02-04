@@ -71,6 +71,10 @@
   opacity: 1;
 }
 
+.centered:hover .middle {
+  opacity: 1;
+}
+
 .text {
   background-color: white;
   font-family: Nunito, Helvetica;
