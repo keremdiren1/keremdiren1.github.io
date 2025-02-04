@@ -1,7 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,700,900);
 
 .centered {
-  position: relative
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.centeredphoto {
+  position: relative;
   margin: 0 auto;
   max-width: 700px;
 }
