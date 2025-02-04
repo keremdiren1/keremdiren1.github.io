@@ -57,6 +57,7 @@
 
 .left:hover .image {
   opacity: 0.3;
+  scale(1.1)
 }
 
 .left:hover .middle {
@@ -65,10 +66,16 @@
 
 .right:hover .image {
   opacity: 0.3;
+  scale(1.1)
 }
 
 .right:hover .middle {
   opacity: 1;
+}
+
+.centered:hover .image {
+  opacity: 0.3;
+  scale(1.1)
 }
 
 .centered:hover .middle {
