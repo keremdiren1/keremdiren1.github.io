@@ -16,7 +16,69 @@
 		<h3 class="centered" style="color: #191919;font-size: 25px">AP CSA Topic 6</h3>
 		<div class="centered">
 			<p style="margin-top:5px"><i>Taken Notes:</a></i></p>
-			<p>TEXT</p>
+			<p>Arrays are basically a group of data of the same type. For example, an array of ints would be like a box that can only take int type data. Every data would have a corresponding index.</p>
+			<p></p>
+			<p>The size of an array can not be changed after it is created.</p>
+			<p></p>
+			<p>Arrays can store either primitive data or object reference data.</p>
+			<p></p>
+			<p>There are 2 ways to create an array:</p>
+			<p>We can write “int[] array = new int[5];”, which would make an array with 5 ints set to default value.</p>
+			<p>We can also write “int[] array = {1, 2, 3};”, which would create an array with 3 elements with 1, 2, and 3 as its values.</p>
+			<p></p>
+			<p>The default values of data type are 0 for ints, 0.0 for doubles, false for booleans, and null for reference type data.</p>
+			<p></p>
+			<p>We can access a specific element in an array by using []. For example, writing “array[1];” would select the second element in an array named “array”. We can also change the value at the written index by writing something similar to “array[1] = 12”, which would set the value of the element in index 1 of the array named array to 12.</p>
+			<p></p>
+			<p>Loops can be used to access all elements in an array, which is called traversing an array.</p>
+			    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+	<h4>For example, the following array could be accessed like this:</h4>
+    <pre><code>
+int[] arr = {1, 4, 6};
+for (int i = 0; i < arr.length; i++){
+	System.out.println(arr[i]);
+}
+	    </code></pre>
+			<p>This would print out every element of the array named arr.</p>
+			<p></p>
+			<p>An enhanced for loop (also called for each loop) could also be used to traverse an array. This, however, has less features than a usual for loop.</p>
+			    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+	<h4>This is an example:</h4>
+    <pre><code>
+int[] arr = {1, 4, 6};
+for (int i : arr){
+	System.out.println(i);
+}
+	    </code></pre>
+			<p>This basically sets values of arr to the variable i and prints them out in each iteration. This for each loop has the same result as the for loop right before it.</p>
+			<p></p>
+			<p>We can get the number of elements an array has by writing “arrayName.length”.</p>
 		<br>
 </body>
 </html>
