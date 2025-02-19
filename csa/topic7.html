@@ -16,7 +16,46 @@
 		<h3 class="centered" style="color: #191919;font-size: 25px">AP CSA Topic 7</h3>
 		<div class="centered">
 			<p style="margin-top:5px"><i>Taken Notes:</a></i></p>
-			<p>TEXT</p>
+			<p>An ArrayList is a resizable list that allows adding and removing elements from it even after initialization.</p>
+			<p></p>
+			<p>To use an ArrayList, we must import it from the java.util package. This means that we should write “import java.util.ArrayList;” or “import java.util.*;” to use it.</p>
+			<p></p>
+			<p>An ArrayList, unlike an array, works with objects. This means that it works with Integer instead of int, Double instead of double etc.</p>
+			<p></p>
+			<p>An ArrayList can be initialized like “ArrayList<Integer> arrayListName = new ArrayList<>()”. We can write the type in the “<” and “>”; this, however, is not mandatory.</p>
+			<p></p>
+			<p>The methods in the Java Quick Reference are the following (E is written in some of these methods; E represents an object type, any of them (like Integer, String etc.)):</p>
+			    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+    <pre><code>
+int size() // returns the size of the ArrayList
+boolean add(E obj) // adds the element in the parameter to the end of the ArrayList, returns true
+void add(int index, E obj) // adds the given element to the given index
+E remove(int index) // removes the element in the given index, returns the removed element
+E get(int index) // returns the value in the given index
+E set(int index, E obj) // sets the given element into the given index, returns the element that was previously in that index
+	    </code></pre>
+			<p>An ArrayList can be traversed just like an array, a while loop, for loop, or an enhanced for loop can be used.</p>
+			<p></p>
+			<p>When traversing an ArrayList, removing an element would change the index of every element that comes after the deleted element. This is why we should be careful when doing it.</p>
+			<p></p>
+			<p>When using an enhanced for loop, we should not change the size of the ArrayList. If we do, the program will give an error.</p>
+			<p></p>
+			<p>There are standard algorithms for searching an ArrayList. Sequential/Linear search works just like traversing an array. The loop, however, stops when it finds the value it’s looking for. Binary search starts at the middle of a sorted ArrayList. Since the ArrayList is sorted by a specific condition (from smallest to largest, for example), the algorithm eliminates the half that doesn’t satisfy the conditions and now starts at the middle of the half that satisfies the condition. This goes on until the value is found or until there are no elements left to be checked.</p>
+			<p></p>
+			<p>Selection sort and insertion sort are iterative sorting algorithms that can be used to sort an array or an ArrayList.</p>
 		<br>
 </body>
 </html>
