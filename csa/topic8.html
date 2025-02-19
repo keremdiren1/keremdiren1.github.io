@@ -16,7 +16,61 @@
 		<h3 class="centered" style="color: #191919;font-size: 25px">AP CSA Topic 8</h3>
 		<div class="centered">
 			<p style="margin-top:5px"><i>Taken Notes:</a></i></p>
-			<p>TEXT</p>
+			<p>A 2D array is stored as an array of arrays. For example, a 2D array of ints would be an array of int arrays.</p>
+			<p></p>
+			<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+	<h4>We can create 2D arrays like the following:</h4>
+    <pre><code>
+int[][] array = new int[row][col];
+int[][] array = {{1, 2, 3}, {4, 5, 6}};
+	    </code></pre>
+			<p>We can also create 2D arrays that are not rectangular (arrays like {{1, 2, 3}, {4, 5}}). This, however, is not a topic in the AP CSA exam.</p>
+			<p></p>
+			<p>In the exam, the first [] in “new int[row][col];” represents the rows, while the seconds [] represents the columns. An example 2 row and 3 column array would be “{{1, 2, 3}, {4, 5, 6}}”.</p>
+			<p></p>
+			<p>We can access a specific element by “array[rowindex][colindex]”, while we can access a specific row by “array[rowindex]”.</p>
+			<p></p>
+			<p>We can traverse through 2D arrays by using nested while loops, nested for loops, or nested enhanced for loops.</p>
+			<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+	<h4>An example with enhanced for loops would be this:</h4>
+    <pre><code>
+for (int[] i : array){
+	for (int k : i){
+		System.out.println(k);
+	}
+}
+	    </code></pre>
+			<p>The variable i selects a row, while the variable k traverses through the i each iteration.</p>
+			<p></p>
+			<p>We can get the number of rows by “array.length”, while we can get the number of columns by “array[0].length”.</p>
 		<br>
 </body>
 </html>
