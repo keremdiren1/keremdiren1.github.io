@@ -7,6 +7,7 @@ My name is Kerem. I'm from Turkey and I'm a student. I like playing games in my 
 
 #### Projects
 You can find my projects in this [link](https://keremdiren1.github.io/projects.html).
+
 You can find my Pico-Car project [here](https://keremdiren1.github.io/projects/picoCar.html).
 
 #### AP CSA Notes
