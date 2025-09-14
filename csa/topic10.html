@@ -16,7 +16,33 @@
 		<h3 class="centered" style="color: #191919;font-size: 25px">AP CSA Topic 10</h3>
 		<div class="centered">
 			<p style="margin-top:5px"><i>Taken Notes:</a></i></p>
-			<p>TEXT</p>
+			<p>Recursion is when a method calls itself in its own body. For a recursion method to work, there has to be two things in the recursive method. First is a condition to stop; if there is no condition to stop, the loop would keep calling itself, which wouldn't let the code to progress. The second is the change; since the method calls itself, if there isn't any change (in the input or a variable of the class etc.), the method would never reach its condition to stop, which would also keep it going on with no forever.</p>
+			    <style>
+	    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        pre {
+            background-color: #e8e8e8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+    <pre><code>
+public class Factorial{
+	public int factorial(int n){
+		if (n == 0){
+			return 1;
+		}
+		return n * factorial(n-1);
+	}
+	public static void main(String[] args){
+		
+	}
+}
+	    </code></pre>
 		<br>
 </body>
 </html>
